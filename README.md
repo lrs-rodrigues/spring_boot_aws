@@ -1,9 +1,9 @@
 # Spring Boot AWS
 
 ### AWS Serviços
-- [ ] AWS RDS (Postgresql/Aurora) 
-- [ ] AWS S3 (Bucket)
-- [ ] AWS SQS (Queue) 
+- [X] AWS RDS (Postgresql/Aurora) 
+- [X] AWS S3 (Bucket)
+- [X] AWS SQS (Queue) 
 - [ ] AWS SES  (E-mail) 
 - [ ] AWS Secrets Manager (AWS KMS) 
 - [ ] AWS CloudWatch 
