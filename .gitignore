@@ -1,5 +1,5 @@
 HELP.md
-target/
+spring_boot_aws_secret_manager/target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
