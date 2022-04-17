@@ -1,8 +1,7 @@
-package com.lrsrodrigues.spring_boot_aws.receiver;
+package com.lrsrodrigues.spring_boot_aws.queue.receiver;
 
 import com.lrsrodrigues.spring_boot_aws.model.User;
 import com.lrsrodrigues.spring_boot_aws.services.EmailService;
-import io.awspring.cloud.messaging.config.annotation.NotificationMessage;
 import io.awspring.cloud.messaging.listener.SqsMessageDeletionPolicy;
 import io.awspring.cloud.messaging.listener.annotation.SqsListener;
 import org.slf4j.Logger;

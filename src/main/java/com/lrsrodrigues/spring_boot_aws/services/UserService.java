@@ -2,6 +2,7 @@ package com.lrsrodrigues.spring_boot_aws.services;
 
 import com.lrsrodrigues.spring_boot_aws.dtos.UserDTO;
 import com.lrsrodrigues.spring_boot_aws.model.User;
+import com.lrsrodrigues.spring_boot_aws.queue.sender.EmailSender;
 import com.lrsrodrigues.spring_boot_aws.repositories.UserRepository;
 import com.lrsrodrigues.spring_boot_aws.services.exceptions.ResourceNotFoundException;
 import io.awspring.cloud.messaging.core.QueueMessagingTemplate;
@@ -17,16 +18,11 @@ import java.util.List;
 @Service
 public class UserService {
 
-    private static final Logger log = LoggerFactory.getLogger(UserService.class);
-
-    @Value("${cloud.aws.sqs.emailQueue}")
-    private String emailQueue;
-
     @Autowired
     private UserRepository userRepository;
 
     @Autowired
-    private QueueMessagingTemplate messagingTemplate;
+    private EmailSender emailSender;
 
     public List<User> findAll() {
         return userRepository.findAll();
@@ -39,10 +35,7 @@ public class UserService {
     @Transactional
     public User insert(UserDTO obj) {
         User user = fromData(null, obj);
-
-        messagingTemplate.convertAndSend(emailQueue, user);
-        log.info("Message sent {}", user.getEmail());
-
+        emailSender.send(user);
         return userRepository.save(user);
     }
 
