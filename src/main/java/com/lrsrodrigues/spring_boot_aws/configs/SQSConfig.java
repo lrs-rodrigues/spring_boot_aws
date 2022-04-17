@@ -4,15 +4,27 @@ import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.services.sqs.AmazonSQSAsync;
 import com.amazonaws.services.sqs.AmazonSQSAsyncClientBuilder;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import io.awspring.cloud.core.env.ResourceIdResolver;
 import io.awspring.cloud.messaging.config.QueueMessageHandlerFactory;
 import io.awspring.cloud.messaging.config.SimpleMessageListenerContainerFactory;
 import io.awspring.cloud.messaging.core.QueueMessagingTemplate;
 import io.awspring.cloud.messaging.listener.QueueMessageHandler;
 import io.awspring.cloud.messaging.listener.SimpleMessageListenerContainer;
+import io.awspring.cloud.messaging.support.NotificationMessageArgumentResolver;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
+import org.springframework.messaging.converter.DefaultContentTypeResolver;
+import org.springframework.messaging.converter.MappingJackson2MessageConverter;
+import org.springframework.messaging.converter.MessageConverter;
+import org.springframework.messaging.handler.annotation.support.PayloadMethodArgumentResolver;
+import org.springframework.messaging.handler.invocation.HandlerMethodArgumentResolver;
+import org.springframework.util.MimeTypeUtils;
+
+import java.util.Collections;
+import java.util.List;
 
 @Configuration
 public class SQSConfig {
@@ -71,4 +83,5 @@ public class SQSConfig {
         container.setMessageHandler(messageHandler);
         return container;
     }
+
 }

@@ -18,6 +18,8 @@ cloud:
       avatarBucket: "sba-avatar"
     sqs:
       emailQueue: email
+    ses:
+      atendimento: atendimento@bitrus.com.br
     region:
       static: us-east-1
     stack:
