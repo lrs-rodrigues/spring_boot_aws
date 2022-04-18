@@ -46,7 +46,6 @@ public class AvatarService {
         if (avatarSent) updateAvatarIdUser(user, filename);
         return avatarSent;
     }
-
     private String generateFilename(MultipartFile file) {
         return UUID.randomUUID() + "_" + file.getOriginalFilename();
     }
