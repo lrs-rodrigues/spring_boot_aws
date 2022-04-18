@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring_boot_aws_secret_manager" />
         <module name="spring_boot_aws_rds" />
+        <module name="spring_boot_aws_ses" />
         <module name="spring_boot_aws_s3" />
       </profile>
     </annotationProcessing>
@@ -16,6 +17,7 @@
       <module name="spring_boot_aws_rds" target="11" />
       <module name="spring_boot_aws_s3" target="11" />
       <module name="spring_boot_aws_secret_manager" target="11" />
+      <module name="spring_boot_aws_ses" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -23,6 +25,7 @@
       <module name="spring_boot_aws_rds" options="-parameters" />
       <module name="spring_boot_aws_s3" options="-parameters" />
       <module name="spring_boot_aws_secret_manager" options="-parameters" />
+      <module name="spring_boot_aws_ses" options="-parameters" />
     </option>
   </component>
 </project>
