@@ -4,6 +4,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/spring_boot_aws_secret_manager/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_boot_aws_rds/pom.xml" />
       </list>
     </option>
   </component>

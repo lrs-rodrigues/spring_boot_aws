@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/spring_boot_aws.iml" filepath="$PROJECT_DIR$/.idea/spring_boot_aws.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_boot_aws_rds/spring_boot_aws_rds.iml" filepath="$PROJECT_DIR$/spring_boot_aws_rds/spring_boot_aws_rds.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_boot_aws_secret_manager/spring_boot_aws_secret_manager.iml" filepath="$PROJECT_DIR$/spring_boot_aws_secret_manager/spring_boot_aws_secret_manager.iml" />
     </modules>
   </component>

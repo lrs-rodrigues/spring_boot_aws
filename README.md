@@ -5,7 +5,7 @@
 - [X] AWS S3 (Bucket)
 - [X] AWS SQS (Queue) 
 - [X] AWS SES  (E-mail) 
-- [ ] AWS Secrets Manager (AWS KMS) 
+- [X] AWS Secrets Manager (AWS KMS) 
 - [ ] AWS CloudWatch 
 - [ ] AWS CloudFormation
 - [ ] AWS Opensearch 

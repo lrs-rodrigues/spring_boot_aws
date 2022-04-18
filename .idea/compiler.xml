@@ -8,14 +8,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring_boot_aws_secret_manager" />
+        <module name="spring_boot_aws_rds" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="spring_boot_aws_rds" target="11" />
       <module name="spring_boot_aws_secret_manager" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="spring_boot_aws_rds" options="-parameters" />
       <module name="spring_boot_aws_secret_manager" options="-parameters" />
     </option>
   </component>
