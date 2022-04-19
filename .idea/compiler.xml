@@ -11,6 +11,7 @@
         <module name="spring_boot_aws_rds" />
         <module name="spring_boot_aws_ses" />
         <module name="spring_boot_aws_s3" />
+        <module name="spring_boot_aws_sqs" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -18,6 +19,7 @@
       <module name="spring_boot_aws_s3" target="11" />
       <module name="spring_boot_aws_secret_manager" target="11" />
       <module name="spring_boot_aws_ses" target="11" />
+      <module name="spring_boot_aws_sqs" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -26,6 +28,7 @@
       <module name="spring_boot_aws_s3" options="-parameters" />
       <module name="spring_boot_aws_secret_manager" options="-parameters" />
       <module name="spring_boot_aws_ses" options="-parameters" />
+      <module name="spring_boot_aws_sqs" options="-parameters" />
     </option>
   </component>
 </project>

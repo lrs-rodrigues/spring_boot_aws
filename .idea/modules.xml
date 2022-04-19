@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/spring_boot_aws_s3/spring_boot_aws_s3.iml" filepath="$PROJECT_DIR$/spring_boot_aws_s3/spring_boot_aws_s3.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_boot_aws_secret_manager/spring_boot_aws_secret_manager.iml" filepath="$PROJECT_DIR$/spring_boot_aws_secret_manager/spring_boot_aws_secret_manager.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring_boot_aws_ses/spring_boot_aws_ses.iml" filepath="$PROJECT_DIR$/spring_boot_aws_ses/spring_boot_aws_ses.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring_boot_aws_sqs/spring_boot_aws_sqs.iml" filepath="$PROJECT_DIR$/spring_boot_aws_sqs/spring_boot_aws_sqs.iml" />
     </modules>
   </component>
 </project>
