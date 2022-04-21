@@ -6,7 +6,7 @@ phases:
       java: openjdk11
   pre_build:
     commands:
-      - Amazon ECR
+      - echo Amazon ECR
       - aws --version
       - $(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)
       - TAG="$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | head -c 8)"
